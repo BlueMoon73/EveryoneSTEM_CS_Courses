@@ -89,7 +89,6 @@ public class Main {
                 System.out.println("Amount in EUR: €" + amountInEUR);
                 System.out.println("Amount in GBP: £" + amountInGBP);
                 System.out.println("Amount in JPY: ¥" + amountInJPY);
-        System.out.println("adasndasd");
 
                 }
         }
