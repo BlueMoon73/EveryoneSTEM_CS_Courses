@@ -1,4 +1,4 @@
-public class Lesson_2_Code {
+public class Main {
     public static void main(String[] args) {
 
         // Declaring & Initializing variables:
