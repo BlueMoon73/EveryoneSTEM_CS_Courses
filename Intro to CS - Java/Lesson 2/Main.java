@@ -1,7 +1,18 @@
+//*******************************************************************
+// Author: Monish Saravana Kumar Divya Sundari
+// Course: Everyone STEM - Intro to CS: Java
+// Last Modified: 7/1/2023
+//
+// PURPOSE:
+// - Contains all the code mentioned in Lesson 5 of, Everyone STEM's Intro to CS: Java Course.
+//
+// ASSUMPTIONS:
+// - Assumes that you have read through the associated slides for this lesson. 
+//*******************************************************************
 public class Main {
     public static void main(String[] args) {
 
-        // Declaring & Initializing variables:
+        // ------------------------------- Declaring and Initializing Variables  -------------------------------
 
         // Declare an integer variable named "age" and assign a value
         int age = 25;
@@ -17,7 +28,7 @@ public class Main {
 
 
 
-        // -------------------- Working with variables ------------------------
+        // ------------------------------- Working with Variables  -------------------------------
 
         // Declare and initialize variables of primitive data types
                 int myNumber = 42;
@@ -47,7 +58,7 @@ public class Main {
         System.out.println("Number 3: " + num3);
 
 
-        // -------------------- Working with Strings ------------------------
+        // ------------------------------- Working with Strings -------------------------------
 
 
         // Declare a String variable named "name" and assign a value
@@ -69,7 +80,7 @@ public class Main {
 
 
 
-        // -------------------- Working with Constants ------------------------
+        // ------------------------------- Working with Constants -------------------------------
         // Declare constant variables for conversion rates
         // These variables now cannot be changed.
         final double USD_TO_EUR = 0.85;
