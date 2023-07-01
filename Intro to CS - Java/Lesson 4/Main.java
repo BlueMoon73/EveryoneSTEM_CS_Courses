@@ -1,14 +1,26 @@
+//*******************************************************************
+// Author: Monish Saravana Kumar Divya Sundari
+// Course: Everyone STEM - Intro to CS: Java
+// Last Modified: 7/1/2023
+//
+// PURPOSE:
+// - Contains all the code mentioned in Lesson 4 of, Everyone STEM's Intro to CS: Java Course.
+//
+// ASSUMPTIONS:
+// - Assumes that you have read through the associated slides for this lesson. 
+//*******************************************************************
 public class Main {
     public static void main(String[] args){
+        // ------------------------------- While Loops -------------------------------
 
         int count = 0;
         while (count < 5) {
-
             // WHILE count is less than 5, the value of count increases by one, and it gets printed.
             System.out.println("Count: " + count);
             count++;
         }
 
+        // ------------------------------- Do-While Loops -------------------------------
 
         int num = 1;
         // the code underneath will be run once, THEN the condition will be checked.
@@ -18,6 +30,7 @@ public class Main {
         } while (num > 6);
         // since num is not greater than 6, it only runs once.
 
+        // ------------------------------- For Loops  -------------------------------
 
         // for-loops - explained
         for (int i = 0; i < 5; i++) {
@@ -30,8 +43,7 @@ public class Main {
             System.out.println(x);
         }
 
-
-
+        // ------------------------------- Nested Loops -------------------------------
 
         /*        You can also place a loop inside another loop. It's  called a nested loop.
            The "inner loop" gets  executed once for each iteration of the "outer loop":
