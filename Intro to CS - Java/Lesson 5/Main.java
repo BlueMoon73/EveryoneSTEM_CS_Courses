@@ -7,7 +7,7 @@
 // - Contains all the code mentioned in Lesson 5 of, Everyone STEM's Intro to CS: Java Course.
 //
 // ASSUMPTIONS:
-// - All Snippets of Code from the Intro to CS: Java Course Lesson 5 slides, in one file.
+// - Assumes that you have read through the associated slides for this lesson.
 //*******************************************************************
 import java.util.Arrays;
 
