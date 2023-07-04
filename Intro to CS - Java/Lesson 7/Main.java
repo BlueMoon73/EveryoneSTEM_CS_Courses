@@ -1,7 +1,7 @@
 //*******************************************************************
 // Author: Monish Saravana Kumar Divya Sundari
 // Course: Everyone STEM - Intro to CS: Java
-// Last Modified: 7/3/2023
+// Last Modified: 7/4/2023
 //
 // PURPOSE:
 // - Contains all the code mentioned in Lesson 7 of, Everyone STEM's Intro to CS: Java Course.
@@ -20,7 +20,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        // ------------------------------- Calling a Function -------------------------------
+        // ------------------------------- Reading from a file  -------------------------------
 
         /* the following code is enclosed by a 'try catch'
          this is required for using this method of reading files.
@@ -48,6 +48,7 @@ public class Main {
             System.out.println("File not found.");
         }
 
+        // ------------------------------- Writing to a file  -------------------------------
         try {
             // Creating a file object
             File file = new File("output.txt");
