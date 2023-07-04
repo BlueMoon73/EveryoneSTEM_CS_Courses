@@ -21,6 +21,9 @@ public class Main {
         int additionResult = sum(x, y); // you can the result of sum in a variable, because the sum returns an integer.
         System.out.println("The sum is: " + additionResult);
 
+
+        // Calling the aboutMe function, with "James" and "Blue" as parameters. 
+        // Try playing around with the parameters and see how the output changes. 
         aboutMe("James", "Blue");
 
 
