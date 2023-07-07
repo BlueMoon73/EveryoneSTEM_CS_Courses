@@ -4,7 +4,7 @@ public class Cat extends Animal {
     void sound() {
         System.out.println("The cat meows");
     }
-// the following method would return an error, as the drink() method in the animal class is overridden
+// The following method would return an error, as the drink() method in the animal class is overridden
 //    @Override
 //    void drinkWater(){
 //

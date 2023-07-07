@@ -10,4 +10,12 @@ public class Car {
     public void setName(String newName) {
         name = newName;
     }
+
+    // ------------------------------- The Static Keyword -------------------------------
+
+    static int myStaticInt = 3;
+    static String myStaticString = "Hey!";
+    static void myStaticMethod() {
+        System.out.println("This a static method! ");
+    }
 }

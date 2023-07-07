@@ -1,7 +1,7 @@
 //*******************************************************************
 // Author: Monish Saravana Kumar Divya Sundari
 // Course: Everyone STEM - Intro to CS: Java
-// Last Modified: 7/6/2023
+// Last Modified: 7/7/2023
 //
 // PURPOSE:
 // - Contains all the code mentioned in Lesson 9 of, Everyone STEM's Intro to CS: Java Course.
@@ -21,7 +21,11 @@ public class Main {
         return x + y;
     }
 
+
+
     public static void main(String[] args) {
+        // ------------------------------- Creating Objects  -------------------------------
+
         // this creates an object from the main class.
         Main sampleObject = new Main();
 
@@ -58,16 +62,26 @@ public class Main {
         /*  since the releaseYear is private, and does not have a Getter and Setter, the values cannot be retrieved or modified.
             These lines would lead to an error as these fields are not public:
             myCar.name
-            myCar.releaseYear */
+            myCar.releaseYear
+        */
+
+        // ------------------------------- The Static Keyword -------------------------------
+
+        Car.myStaticMethod();
+        System.out.println(Car.myStaticInt);
+        System.out.println(Car.myStaticString);
 
         // ------------------------------- Inheritance  -------------------------------
 
         Animal animal = new Animal();
         animal.sound();
+        animal.drinkWater(); // outputs the same thing as animal.drinkWater()
 
 
         Cat cat = new Cat();
         cat.sound();
+        animal.drinkWater(); // outputs the same thing as animal.drinkWater()
+
 
 
     }
