@@ -82,6 +82,14 @@ public class Main {
         cat.sound();
         animal.drinkWater(); // outputs the same thing as animal.drinkWater()
 
+        // ------------------------------- Polymorphism  -------------------------------
+        Pig pig = new Pig();
+        Dog dog = new Dog();
+
+        cat.sound();
+        pig.sound();
+        dog.sound();
+
 
 
     }
