@@ -55,6 +55,7 @@ public class Main {
             System.out.println("The 'try catch' is finished.");
         }
 
+        // ------------------------------- Reading from  a file  -------------------------------
 
         try {
             // Creating a file object
