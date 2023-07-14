@@ -12,8 +12,11 @@
 
 import java.util.Scanner;
 
-public class Lesson4Solutions {
+public class Lesson4Solutions1 {
     public static void main(String[] args) {
+
+        // ------------------------------- Activity 1 ------------------------------
+
         Scanner scanner = new Scanner(System.in); // Create a Scanner object for user input
         boolean choice;
 
@@ -65,5 +68,11 @@ public class Lesson4Solutions {
         System.out.println("-----------------------------------");
         System.out.println("Thank you for using the calculator!"); // Display a farewell message
         scanner.close(); // Close the Scanner object
+
+
+
+
+
+
     }
 }
