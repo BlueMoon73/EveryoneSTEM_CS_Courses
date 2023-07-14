@@ -4,7 +4,7 @@
 // Last Modified: 7/12/2023
 //
 // PURPOSE:
-// - Contains all the code mentioned in Lesson 3 of, Everyone STEM's Intro to CS: Java Course.
+// - Contains all the code mentioned in Lesson 4 of, Everyone STEM's Intro to CS: Java Course.
 //
 // ASSUMPTIONS:
 // - Assumes that you have read through the associated slides for this lesson.

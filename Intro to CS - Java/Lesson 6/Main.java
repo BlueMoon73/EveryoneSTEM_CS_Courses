@@ -9,6 +9,10 @@
 // ASSUMPTIONS:
 // - Assumes that you have read through the associated slides for this lesson.
 //*******************************************************************
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -22,18 +26,73 @@ public class Main {
         System.out.println("The sum is: " + additionResult);
 
 
-        // Calling the aboutMe function, with "James" and "Blue" as parameters. 
-        // Try playing around with the parameters and see how the output changes. 
+        // Calling the aboutMe function, with "James" and "Blue" as parameters.
+        // Try playing around with the parameters and see how the output changes.
         aboutMe("James", "Blue");
 
+        // ------------------------------- Exception Handling with Try-Catch -------------------------------
 
-        // ------------------------------- Using functions from imported modules -------------------------------
+        try {
+            // creates an integer array with 3 elements
+            int[] myNumbers = {1, 2, 3};
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your name: ");
-        String name = scanner.nextLine();
-        System.out.println("Hello, " + name + "!");
-        scanner.close();
+            // tries to access index 10 of the array, which does not exist
+            System.out.println(myNumbers[10]);
+        } catch (Exception e) {
+            // since an exception is encountered, the following code is run
+            System.out.println("Something went wrong.");
+        }
+
+
+        // ------------------------------- Try-Catch-Finally -------------------------------
+
+        try { // contains the code that may throw an exception
+            int[] moreNums = {3, 4, 5};
+            System.out.println(moreNums[8]);
+        } catch (Exception e) { // the code to handle an exception if one is thrown
+            System.out.println("Something went wrong.");
+        } finally { // code that executes regardless of whether an exception is thrown
+            System.out.println("The 'try catch' is finished.");
+        }
+
+
+        try {
+            // Creating a file object
+            File file = new File("data.txt");
+
+            // Opening the file for reading
+            Scanner scanner = new Scanner(file);
+
+            // Reading the file line by line
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                System.out.println(line);
+            }
+
+            // Closing the file
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found.");
+        }
+
+        // ------------------------------- Writing to a file  -------------------------------
+        try {
+            // Creating a file object
+            File file = new File("output.txt");
+
+            // Opening the file for writing
+            FileWriter writer = new FileWriter(file);
+
+            // Writing data to the file
+            writer.write("Hello, World!");
+            writer.write("\nThis is a sample line.");
+
+            // Closing the file
+            writer.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred while writing to the file.");
+        }
+
 
     }
 
@@ -52,11 +111,11 @@ public class Main {
 
     // this function has a String return type and has 2 String parameters.
     static void aboutMe(String name, String favColor) {
-       String nameString = "My name is " + name + ".";
-       String colorString = "My favorite color is " + favColor + ".";
+        String nameString = "My name is " + name + ".";
+        String colorString = "My favorite color is " + favColor + ".";
 
-       // Calling the other function
-       printStrings(nameString, colorString);
+        // Calling the other function
+        printStrings(nameString, colorString);
     }
 
 }
