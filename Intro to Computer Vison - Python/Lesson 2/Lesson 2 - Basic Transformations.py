@@ -2,16 +2,18 @@ import cv2
 import numpy as np
 
 # Load the image
-image = cv2.imread('image.jpg')
+image = cv2.imread('Assets/Tiger.jpg')
 
 # Define the transformation matrix for translation
-tx, ty = 100, 50
-translation_matrix = np.float32([[1, 0, tx], [0, 1, ty]])
+
+tx, ty = 100, 50 # number of pixels to move along each axis
+
+translation_matrix = np.float32([[1, 0, tx], [0, 1, ty]]) # translation matrix created to be able to apply translation
 
 # Perform the translation
 translated_image = cv2.warpAffine(image, translation_matrix, (image.shape[1], image.shape[0]))
 
-# Define the rotation angle
+# Define the rotation angleS
 angle = 45
 center = (image.shape[1] // 2, image.shape[0] // 2)
 
