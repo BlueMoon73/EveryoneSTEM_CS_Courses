@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load the image
-image = cv2.imread('Assets/Tiger.jpg')
+image = cv2.imread('Assets/tiger.jpg')
 
 # Define the transformation matrix for translation
 
