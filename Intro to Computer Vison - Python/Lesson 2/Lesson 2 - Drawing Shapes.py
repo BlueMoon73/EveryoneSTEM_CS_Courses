@@ -26,4 +26,3 @@ cv2.imwrite('MyImage.png', image)
 cv2.imshow('Image', image)
 
 cv2.waitKey()
-cv2.destroyAllWindows()
