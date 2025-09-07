@@ -4,4 +4,4 @@ Here you can find all the code used in the Intro to CS - Java course, offered by
 
 This course and it's content has been created by Monish Saravana, and is being offered by EveryoneSTEM. 
 
-You can find more on our website: _____
+You can find more on our website!
